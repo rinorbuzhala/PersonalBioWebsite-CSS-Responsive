@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<!-- Fig. 11.6: SearchingStrings.html -->
+<!-- HTML document to demonstrate methods indexOf and lastIndexOf. -->
+<html>
+   <head>
+      <meta charset = "utf-8">
+      <title>Searching Strings</title>
+      <link rel = "stylesheet" type = "text/css" href = "style.css">
+   <script src = "SearchingStrings.js"></script> 
+    <script>
+        function goBack() 
+            {
+                window.history.back();
+            }
+   </script>
+   </head>
+   <body>
+      <button onclick="goBack()"><img src="back.png"></button>
+      <form id = "searchForm" action = "#">
+         <h1>The string to search is:
+             abcdefghijklmnopqrstuvwxyzabcdefghijklm</h1>
+         <p>Enter the substring to search for 
+         <input id = "inputField" type = "search">
+         <input id = "searchButton" type = "button" value = "Search"></p>
+         <div id = "results"></div>
+      </form>
+   </body>
+</html>

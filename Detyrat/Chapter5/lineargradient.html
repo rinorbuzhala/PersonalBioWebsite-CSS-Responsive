@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Linear Gradient</title>
+		<style type="text/css">
+			div
+			{
+				width: 250px;
+				height: 250px;
+				border: 5px solid navy;
+				padding: 10px 30px;
+				text-align: center;
+				background: -webkit-gradient(
+					linear, center top, center bottom,
+					color-stop(20%, white), color-stop(30%, lightsteelblue), color-stop(85%, navy) ); 
+				background: -moz-linear-gradient(
+					top center, white 20%, lightsteelblue 50%, navy 80%);
+				background: linear-gradient(
+					to bottom, white 20%, lightsteelblue 70%, navy 90%);
+				float: left;
+				margin-right: 20px;
+			}
+			#horizontal
+			{
+				width: 250px;
+				height: 300px;
+				border: 6px solid orange;
+				padding: 25px 40px;
+				text-align: center;
+				background: -webkit-gradient(
+					linear, left top, right top,
+				color-stop(20%, white), color-stop(60%, yellow),
+				color-stop(75%, orange) ) ; 
+				background: -moz-linear-gradient(
+					left, white 20%, yellow 60%, orange 80%);
+				background: linear-gradient(
+					90deg, white 20%, yellow 60%, orange 90% );
+				margin-right: 30px;
+			}
+			#angle
+			{
+				width: 200px;
+				height: 200px;
+				border: 3px solid purple;
+				padding: 5px 20px;
+				text-align: center;
+				background: -webkit-gradient(
+					linear, left top, right bottom,
+					color-stop(15%, white), color-stop(50%, plum),
+					color-stop(75%, purple) ); 
+				background: -moz-linear-gradient(
+					top left, white 15%, plum 50%, purple 75% );
+				background: linear-gradient(
+					45deg, white 15%, plum 50%, purple 75% );
+			}
+		</style>	
+	</head>
+	<body>
+			<button onclick="goBack()"><img src="back.png"></button>
+		<script>
+			function goBack() {
+				window.history.back()
+			}
+		</script>	
+		</a><br><br><br>	
+		<div><h2>Veritcal Linear Gradient</h2></div>
+		<div id="horizontal"><h2>Horizontal Gradient</h2></div>
+		<div id="angle"><h2>Diagonal Linear Gradient</h2></div>
+
+	</body>
+</html>

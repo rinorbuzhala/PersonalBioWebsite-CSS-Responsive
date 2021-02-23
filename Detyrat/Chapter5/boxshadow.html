@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<!-- Fig. 5.3: boxshadow.html-->
+<!-- Creating box-shadow effects.-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Box Shadow</title>
+		<style type="text/css">
+			div 
+			{
+				width: 250px;
+				height: 300px;
+				background-color: plum;
+				box-shadow: 30px 30px 60px dimgrey;
+				float: left;
+				margin-right: 140px;
+				margin-top: 60px
+			}
+			#box2
+			{
+				width: 300px;
+				height: 250px;
+				background-color: plum;
+				box-shadow: -30px -30px 70px dimgrey;	
+			}
+			h2
+			{
+				text-align: center;
+			}
+		</style>	
+	</head>
+	<body>
+			<button onclick="goBack()"><img src="back.png"></button>
+		<script>
+			function goBack() {
+				window.history.back()
+			}
+		</script>	
+		<div><h2>Box Shadow Bottom and Right</h2></div>
+		<div id="box2"><h2>Box Shadow Top and Left</h2>
+
+	</body>
+</html>

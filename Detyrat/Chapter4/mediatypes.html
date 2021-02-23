@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<!--Fig. 4.16: mediatypes.html-->
+<!-- CSS media types.-->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Media Types</title>
+		<style type="text/css">
+			@media text-align-last: 
+			{ 
+			 	body { background-color: steelblue; }
+			 	h1   {font-family: verdana, helvetica, sans-serif;
+			 		   color: palegreen; }
+			 	p 	 { font-size: 12pt;
+			 		  color: white; 
+			 		  font-family: arial, sans-serif; }		
+			 } /* End media all declaration. */	
+			 
+			 @media print 
+			 { 
+			 	body	{background-color: white; }
+			 	h1		{color: seagreen; }
+			 	p 		{ font-size: 14pt; 
+			 			 color: steelblue; 	
+			 			 font-family: "times new roman", times, serif; }
+			 } /* End @media print declaration */
+		</style>	 			 
+	</head>
+	<body>
+			<button onclick="goBack()"><img src="back.png"></button>
+		<script>
+			function goBack() {
+				window.history.back()
+			}
+		</script>	
+		<h1>CSS Media Types Example</h1>
+
+		<p>
+			This example uses CSS meda type to vary how the page
+			appears in print and how it appears on any other media.
+			This text will appear in one font on the screen and a
+			dofferent font on paper or in a print preview. To see
+			the difference in Internet Explorer, go to the Print
+			menu and select Print Preview. In Firefox, select PRint 
+			Preview from the File menu.
+		</p>	
+	</body>
+</html>

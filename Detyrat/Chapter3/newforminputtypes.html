@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+
+<!-- Fig. 3.1: newforminputtypes.html -->
+<!-- New HTML5 form input types and attributes. -->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>New HTML5 Input Types</title>
+	</head>
+
+	<body>
+		
+		<button onclick="goBack()"><img src="back.png"></button>
+		<script>
+			function goBack() {
+				window.history.back()
+			}
+		</script>
+
+		<h1>New HTML5 Input  Types Demo</h1>
+		<p>This form demonstrates the  new HTML5 input types and the placeholder , required and autofocus attributes.
+		</p>
+		
+		<form method="post " 	action="http://www.deitel.com">	
+			<p>
+				<label>Color:
+					<input type="color" autofocus />
+					
+				</label>
+			</p>
+			
+			<p>
+				<label>Datetime:
+					<input type="datetime"  />
+					(3.12.2020 T0 21:37)
+				</label>
+			</p>
+			<p>
+				<label>Datetime=local:
+					<input type="datetime-local"  />
+					(3.12.2020 T0 21:37)	
+				</label>
+			</p>
+			<p>
+				<label>Email:
+					<input type="email" placeholder="name@domain.com" required /> (name@domain.com)	
+				</label>
+			</p>	
+
+			<p>
+				<label>Month:
+					<input type="month"/>December
+				</label>
+			</p>
+			<p>
+				<label>Number:
+					<input type="number" 
+					min="0"
+					max="7"
+					step="1"
+					value="4"/>
+				</label>5
+			</p>
+			<p>
+				<label>Range:
+					<input type="range"
+					min="0"
+					max="20"
+					value="10"/> 20
+				</label>
+			</p>
+			<p>
+				<label>Search:
+					<input type="search" placeholder="search query" />
+				</label>
+			</p>
+			<p>
+				<label>Tel:
+					<input type="tel" placeholder="049111111"
+						pattern="\(d{3}\)+\d{3}-\d{4}" required />
+						(049111111)
+				</label>
+			</p>
+			<p>
+				<label>Time:
+					<input type="time"/> (7.12.2020)
+				</label>
+			</p>
+			<p>
+				<label>URL:
+					<input type="url"
+					placeholder="http"//www.domainname.com />
+					(http://www.domainname.com)
+				</label>
+			</p>
+			<p>
+				<label>Week:
+					<input type="week" />
+					(2020-W04)
+				</label>
+			</p>
+			<p>
+			<input type="submit" value="Submit" />	
+			<input type="reset" value="Clear" />
+		</p>
+	</form>
+	</body>
+</html>		
+
+
+
+
+
+	</body>
+</html>
