@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Favorites</title>
+		<title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="favorites.css">
+        <link href="https://fonts.google.com/specimen/Roboto+Condensed" rel="stylesheet">
+        
+</head>
+<body>
+	<div class="menu">  
+			<div class="logo">
+				<a href="index.html">	
+					<img src="logo.png">
+				</a>
+			</div>
+	  <div class="nav">    
+	<section> 
+		 <img  src="menu.png" class="menulogo dropbtn" onclick="togglemenu()">
+    		<nav>
+                <ul id="menulist">
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="about.html">About</a></li>
+        			<li><a href="assignments.html">Assignments</a></li>
+        			<li class="active"><a href="favorites.html">Favorites</a></li>
+        			<li><a href="contact.html">Contact</a></li>
+                    
+                </ul>    
+		  </nav>
+    </section>
+    </div>
+
+<br><br><br>
+<section>
+	<h3>Some of my favorite things</h3>
+
+	<p>I like studying Computer Science and Programming.</p>
+
+	<p>I like watching movies and series.</p>
+
+	<p>One of my Favorite series is Prison Break.</p>
+
+	<p>I like so much gaming.Games i like the most than others are CSGO and PUBGM.</p>
+
+	<p>I like winter and snow.</p>
+</section>	
+
+
+	<footer>
+  			<p class="text">Rinor Buzhala © :12/01/2021 : 7:18PM</p>
+  		</footer>
+  		<script>
+
+	  			var menulist = document.getElementById('menulist');
+
+	  			menulist.style.maxHeight="0px";
+
+	  			function togglemenu(){
+	  				if (menulist.style.maxHeight =="0px") {
+	  					menulist.style.maxHeight = "200px";
+	  				}
+	  				else{
+	  					menulist.style.maxHeight = "0px";
+	  				}
+	  				
+	  			}
+
+	  		</script>
+
+
+
+
+
+
+</body>
+</html>

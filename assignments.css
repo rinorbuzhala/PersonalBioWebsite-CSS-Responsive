@@ -1,0 +1,182 @@
+/*design assignments*/
+body{   
+	background-color: #0b0c10;
+	text-align: ;
+}
+ul{
+  float: right;
+  list-style-type: none;
+  margin-top: 50px;
+  border-radius: 10px
+}
+ul li{
+	display: inline-block;
+}
+ul li a{
+	text-decoration: none;
+	color: #c5c6c7;
+	padding: 5px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li a:hover{
+	background-color: #66fcf1;
+	color: #0b0c10;
+}
+ul li.active a{
+	background-color: #66fcf1;
+	color: #0b0c10;
+}
+.img{
+	border-radius: 10px;
+	width: 300px;
+	height: 300px;
+	float: left;
+}
+.dropbtn{
+	display: block;
+}
+.menulogo{
+	display: none;
+}
+
+
+.logo{
+	float: left;
+	width: 70px;
+	height: 70px;
+}
+h1, h2{
+	color: #66fcf1;
+}
+a{
+	color: #c5c6c7;
+} 
+}
+ 
+.chapters{
+	display: none;
+}
+.chapters > h1{
+	margin-left:40%;
+}
+
+/* DropDown Menu*/
+.dropbtn {
+  background-color: #66fcf1;
+  color: #0b0c10;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #66fcf1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding:  16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #66fcf1;}
+
+.left{ 
+	float: left;
+
+}
+
+
+footer{
+	text-align: center;
+	color: #66fcf1;
+	background-color: #1f2833;
+	height: 40px;
+	width: 100%;
+	left: 0px;
+	font-size: 15px;
+	padding: 13px 0px 0px 0px;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/*Responsive*/
+@media screen and  (max-width: 768px){  
+
+	.menu{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	div nav ul li{
+		display: block;
+		background-color: #1f2833;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	li{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+
+	}
+
+	.text{
+		color: #66fcf1;
+		font-size: 13px;
+	}
+	.logo{
+		float: left;
+		width: 15px;
+		height: 15px;
+	}
+	.menulogo{
+		display: block;
+		float: right;
+		width: 45px;
+		height: 45px;
+		background-color: #66fcf1;
+
+	}
+	#menulist{
+		overflow: hidden;
+		transition: 0.5;	
+	}
+	.img{
+	 width: 150px;
+	 height: 150px;
+	}
+	h2{
+		font-size: 15px;
+		color: #c5c6c7;
+	}
+	footer{
+		text-align: center;
+		color: #c5c6c7;
+		position: fixed;
+		bottom: 0;
+		border-color: #1f2833;
+	}
+	
+	
+}

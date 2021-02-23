@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<!-- Creating a personal Website-->
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Welcome to my Personal Website</title>
+		<link rel="stylesheet" type="text/css" href="index.css">
+		<link href="https://fonts.google.com/specimen/Roboto+Condensed" rel="stylesheet">
+
+	</head>
+	<body>
+		<div class="menu">  
+			<div class="logo">
+				<a href="index.html">	
+					<img src="logo.png">
+				</a>
+			</div>
+		</div>
+		<!-- hyperlinks -->
+			
+				<div class="nav">
+					 <img  src="menu.png" class="menulogo dropbtn" onclick="togglemenu()">
+					<nav>
+						<ul id="menulist">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="assignments.html">Assignments</a></li>
+							<li><a href="favorites.html">Favorites</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+		</nav></div>
+				<br><br><br><br>	
+				</div>
+		
+		
+		<!--Headings -->
+		<!-- paragraph, hyperlinks and traget-->
+		<!-- image-->
+		<section>
+		<br><br><br><h2><div class="name">Rinor Buzhala / <em>Student</em><br></h2></div>
+
+			<img  class="img" src="profile.png">
+				
+		<p><div class="text">
+			I am 18 years old. I am a student of <a class="btn" href="https://www.universum-ks.org/en/home/" target="_blank">  Universum College </a>studying computer science. We are learning programming and I'm enjoying it. Soon I am gonna be a programmer.
+		</p>
+  </div>
+  
+		<h4><p><div class="text">
+			So far we learned HTML5, CSS, JavaScript and for this knowledge we have a Personal Website project using only HTML.
+		</p>
+	</div>
+
+		<p><div class="text">
+			We are also learning with<a class="btn" href="https://www.theodinproject.com/home" target="_blank"> The Odin Project</a> which is very good, and very understandable platform.
+		</p>
+	</div>
+		<p><div class="text">
+			Since the beginning of the year I have practiced on platforms like <a class="btn" href="https://www.freecodecamp.org/learn/" target="_blank"> freeComeCamp</a>, and <a class="btn" href="https://www.w3schools.com/" target="_blank"> W3schools, </a> which helped me a lot, also watching videos on Youtube, as well as the tasks given to us, where I have presented them in Assignments.
+		</h4>
+	   </p>
+	</div>
+	</section>
+
+
+		
+		<!-- footer-->
+
+	        <footer>
+	  			<p>Rinor Buzhala © :12/01/2021 : 7:18PM</p>
+	  		</footer>
+
+	  		<script>
+
+	  			var menulist = document.getElementById('menulist');
+
+	  			menulist.style.maxHeight="0px";
+
+	  			function togglemenu(){
+	  				if (menulist.style.maxHeight =="0px") {
+	  					menulist.style.maxHeight = "200px";
+	  				}
+	  				else{
+	  					menulist.style.maxHeight = "0px";
+	  				}
+	  				
+	  			}
+
+	  		</script>
+	</body>	
+</html>

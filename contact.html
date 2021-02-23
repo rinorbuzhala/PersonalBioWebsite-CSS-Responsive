@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contact</title>
+        <link rel="stylesheet" type="text/css" href="contact.css">
+        <link href="https://fonts.google.com/specimen/Roboto+Condensed" rel="stylesheet">
+        
+
+	</head>
+	<body>
+         <div class="menu">  
+            <div class="logo">
+                <a href="index.html">   
+                    <img src="logo.png">
+                </a>
+              </div>  
+
+		<!-- hyperlinks--> 
+    <div class="nav">    
+	<section> 
+         <img  src="menu.png" class="menulogo dropbtn" onclick="togglemenu()">
+    		<nav>
+                <ul id="menulist">
+        			<li><a href="index.html">Home</a></li>
+        			<li><a href="about.html">About</a></li>
+        			<li><a href="assignments.html">Assignments</a></li>
+                    <li><a href="favorites.html">Favorites</a></li>
+        			<li class="active"><a href="contact.html">Contact</a></li>
+
+                </ul>    
+		  </nav>
+    </div></div>
+    </section>
+    </div>
+
+
+
+		<!-- Heading-->
+		<!-- paragraph and links-->
+        
+		<br><br><br><br><h1><div class="cnct"> Contact me</h1></div>
+
+
+        <!--Images-->
+        <!-- the traget attribute-->
+        <section>
+        <div class="contact-form">
+		<p><div class="contact1">
+            Contact me on <a href="https://www.facebook.com/rinor.buzhala.52" target="_blank">  <img src="facebook.png" class="fb">
+        </a></p>
+
+		<p>
+             Contact me on <a href="mailto:rinorbuzhala6@gmail.com" target="_blank"> <img src="gmail.png" class="gmail"></a>
+        </p>
+        
+		<p> Contact me on <a href="https://www.instagram.com/rinorbuzhala_" target="_blank"> <img src="instagram.png" class="ig"></a>
+        </p>
+
+		<p> Contact on my number: +383049121445</p>
+         </div>
+
+
+		
+ 		<!-- input form-->	 
+			
+
+    
+    <h3 class="contactwr">Write to me here</h3>
+    <div class="container">
+    <form>
+        <div class="form">
+        <div>
+            <label>Your name</label>
+            <div>
+                <input type="text"  name="Name" class="input textarea"  required><div class="text" placeholder="First and Last name"></div>
+            </div>
+        </div>
+
+        <div>
+            <label>Your email address</label> 
+            <div>
+                <input type="email"  name="Email" class="input textarea" required><div class="text">(rinorbuzhala6@gmail.com)</div>
+            </div>
+        </div>
+
+        <div>
+            <label>Your message</label>
+            <div>
+                <textarea name="Message"  class="input textarea" required></textarea>
+            </div>
+        </div>
+
+        <div>
+            <button type="submit" class="button"><div class="text">Send Message</button></div>
+        </div>
+          </div>
+      </button>
+  </div></div></form></div></p></div></h1></div></section>
+
+        <!-- footer-->
+        <br><br><br><br>
+        <footer>
+  			<p>Rinor Buzhala © :12/01/2021 : 7:18PM</p>
+  		</footer>
+        <script>
+
+                var menulist = document.getElementById('menulist');
+
+                menulist.style.maxHeight="0px";
+
+                function togglemenu(){
+                    if (menulist.style.maxHeight =="0px") {
+                        menulist.style.maxHeight = "200px";
+                    }
+                    else{
+                        menulist.style.maxHeight = "0px";
+                    }
+                    
+                }
+
+            </script>
+
+    </body>
+</html>
